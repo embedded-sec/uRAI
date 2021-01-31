@@ -63,8 +63,8 @@ To setup the project for the first time clone repo then run.
 
 ```
 cd compiler
-./ci_scripts/init_project.sh
-./ci_scripts/ci-build.sh
+./setup_scripts/init_project.sh
+./setup_scripts/ci-build.sh
 ./mpu_configs/setup_mpu_config_sym_links.sh
 ```
 This will download CLANG 7.0, LLVM 7.0, and arm-none-eabi-gcc. It will setup the directory structure, build a arm-none-eabi-ld with plug-in support (builds all gcc)
@@ -76,7 +76,7 @@ The resulting directory structure will be as follows.
 REPO_ROOT
   |-> compiler (Source for uRAI compiler)
     |-> llvm  (Src for llvm, this is symlinked in to llvm-release_70 below)
-    |-> ci_scripts (ci_scripts)
+    |-> setup_scripts (setup_scripts)
     |-> urai-rt (Runtime src for this project)
     |-> tools  (tools frequently used with this project)
   |-> llvm (created by init script)
