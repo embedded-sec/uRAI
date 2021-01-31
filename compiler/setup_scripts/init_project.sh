@@ -79,7 +79,8 @@ then
   fi
   cd ${PROJECT_ROOT_DIR}/gcc/gcc-arm-none-eabi-6-2017-q1-update/pkg
   tar -xjf gcc-arm-none-eabi-6-2021-q1-update-linux.tar.bz2
-  mv gcc-arm-none-eabi-6-2021-q1-update ../../bins/
+  mv gcc-arm-none-eabi-6-2021-q1-update/* ../../bins/
+  echo "Content was moved to ../../bins" > gcc-arm-none-eabi-6-2021-q1-update/README.md
   cd ${COMPILER_DIR}
 fi
 
