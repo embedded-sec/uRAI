@@ -54,11 +54,9 @@ ${SYM_LINK} ${REPO_ROOT}/llvm/ARMISelLowering.h ${LLVM_DIR}/lib/Target/ARM/ARMIS
 # For metadata
 ${SYM_LINK} ${REPO_ROOT}/llvm/Instructions.h ${LLVM_DIR}/include/llvm/IR/Instructions.h
 
-#echo "${REPO_ROOT}"
-#echo "--------------------"
-#echo "${LLVM_DIR}/include/json/json-forwards.h"
+# This file is for flagging URAI instructions
+${SYM_LINK} ${REPO_ROOT}/llvm/MachineInstr.h ${LLVM_DIR}/include/llvm/CodeGen/MachineInstr.h
 
-# Backend
 
-#IR
+#
 
